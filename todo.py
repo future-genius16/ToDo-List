@@ -20,7 +20,7 @@ class ToDoList:
         self.tasks.append(task)
         self.save_tasks()
 
-    def delete_task(self, index):
+    def remove_task(self, index):
         if 0 <= index < len(self.tasks):
             del self.tasks[index]
             self.save_tasks()
@@ -32,4 +32,4 @@ class ToDoList:
             self.save_tasks()
 
     def list_tasks(self):
-        return self.tasks
+        return self.tasks.copy()
