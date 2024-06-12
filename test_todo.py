@@ -1,11 +1,11 @@
 import unittest
-from todo import TodoList
+from todo import ToDoList
 
 
 class TestTodoList(unittest.TestCase):
 
     def setUp(self):
-        self.todo_list = TodoList()
+        self.todo_list = ToDoList()
 
     def test_add_task(self):
         self.todo_list.add_task("Task 1")
