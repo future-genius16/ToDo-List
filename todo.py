@@ -20,9 +20,9 @@ class ToDoList:
         self.tasks.append(task)
         self.save_tasks()
 
-    def delete_task(self, task):
-        if task in self.tasks:
-            self.tasks.remove(task)
+    def delete_task(self, index):
+        if 0 <= index < len(self.tasks):
+            del self.tasks[index]
             self.save_tasks()
 
     def mark_task_done(self, task):

@@ -1,8 +1,8 @@
-from todo import TodoList
+from todo import ToDoList
 
 
 def main():
-    todo_list = TodoList()
+    todo_list = ToDoList()
     while True:
         print("\n1. Add task")
         print("2. Remove task")
