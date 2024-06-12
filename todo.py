@@ -32,4 +32,4 @@ class ToDoList:
             self.save_tasks()
 
     def list_tasks(self):
-        return self.tasks.copy()
+        return self.tasks
