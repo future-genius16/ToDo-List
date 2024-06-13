@@ -25,10 +25,9 @@ class ToDoList:
             del self.tasks[index]
             self.save_tasks()
 
-    def mark_task_done(self, task):
-        if task in self.tasks:
-            index = self.tasks.index(task)
-            self.tasks[index] = f"{task} (done)"
+    def mark_task_done(self, index):
+        if 0 <= index < len(self.tasks):
+            self.tasks[index] = f"{self.tasks[index]} (done)"
             self.save_tasks()
 
     def list_tasks(self):
