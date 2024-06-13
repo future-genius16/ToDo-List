@@ -33,3 +33,8 @@ class ToDoList:
 
     def list_tasks(self):
         return self.tasks.copy()
+
+    def edit_task(self, index, new_task):
+        if 0 <= index < len(self.tasks):
+            self.tasks[index] = new_task
+            self.save_tasks()
