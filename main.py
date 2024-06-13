@@ -1,5 +1,6 @@
 from todo import ToDoList
 
+
 def main():
     todo_list = ToDoList()
     while True:
@@ -33,6 +34,7 @@ def main():
             break
         else:
             print("Invalid choice. Please enter a number between 1 and 6.")
+
 
 if __name__ == "__main__":
     main()
