@@ -33,3 +33,11 @@ class ToDoList:
 
     def list_tasks(self):
         return self.tasks.copy()
+
+    def edit_task(self, index, new_task):
+        if 0 <= index < len(self.tasks):
+            self.tasks[index] = new_task
+            self.save_tasks()
+
+    def show_done_tasks(self):
+        return [task for task in self.tasks if task.endswith("(done)")]
