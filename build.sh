@@ -1,5 +1,5 @@
 #!/bin/bash
 
-pip install -r tasks.txt
+pip install -r requirements.txt
 
 python main.py
