@@ -18,7 +18,7 @@ def main():
             todo_list.add_task(task)
         elif choice == '2':
             index = int(input("Enter task number to remove: "))
-            todo_list.remove_task(index)
+            todo_list.remove_task(index - 1)
         elif choice == '3':
             tasks = todo_list.list_tasks()
             for idx, task in enumerate(tasks, start=1):
